@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Düğün Davetiyesi</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#fffaf5,#f9ecec);
+font-family:Georgia, serif;
+overflow:hidden;
+}
+
+.card{
+width:90%;
+max-width:380px;
+background:white;
+padding:45px 30px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 20px 50px rgba(0,0,0,0.12);
+position:relative;
+
+opacity:0;
+transform:translateY(50px) scale(.9);
+
+animation:showCard 2s forwards;
+}
+
+@keyframes showCard{
+
+0%{
+opacity:0;
+transform:translateY(50px) scale(.9);
+}
+
+100%{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+
+}
+
+.line{
+width:70px;
+height:2px;
+background:#d4af37;
+margin:20px auto;
+}
+
+.small{
+letter-spacing:4px;
+font-size:13px;
+color:#999;
+}
+
+.names{
+
+font-size:38px;
+color:#7a5b43;
+margin:20px 0;
+animation:fadeText 3s;
+}
+
+@keyframes fadeText{
+
+0%{
+opacity:0;
+}
+
+100%{
+opacity:1;
+}
+
+}
+
+.text{
+
+font-size:17px;
+line-height:1.8;
+color:#555;
+margin-top:15px;
+}
+
+.info{
+
+margin-top:30px;
+line-height:2;
+font-size:18px;
+color:#444;
+}
+
+.footer{
+
+margin-top:30px;
+font-style:italic;
+color:#888;
+}
+
+.flower{
+
+position:absolute;
+font-size:40px;
+opacity:.2;
+}
+
+.f1{
+top:15px;
+left:20px;
+}
+
+.f2{
+bottom:15px;
+right:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="flower f1">❀</div>
+<div class="flower f2">❀</div>
+
+<div class="small">NİŞANIMIZA  DAVETLİSİNİZ</div>
+
+<div class="line"></div>
+
+<div class="names">
+Seyran <br>
+& <br>
+Recep
+</div>
+
+<div class="text">
+Hayatımızın en özel gününde,<br>
+sizleri de aramızda görmekten mutluluk duyarız.
+</div>
+
+<div class="info">
+
+📅 30 Ağustos 2026 <br>
+
+🕖 Saat 13:00 <br>
+
+📍 İstanbul / SULTANBEYLİ
+ Mehmet Akif Mh. Çilenk sok. No:2
+
+</div>
+
+<div class="footer">
+
+Sevgiyle bekliyoruz ♥
+
+</div>
+
+</div>
+
+</body>
+</html>
